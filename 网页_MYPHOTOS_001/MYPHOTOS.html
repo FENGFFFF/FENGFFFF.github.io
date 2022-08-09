@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYPHOTOS</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(8, 81, 53);
+            /* background-image: url(./DSC_0620.JPG); */
+        }
+        p{
+            color:rgba(244, 206, 118, 0.767);
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            position: absolute;
+            bottom:2%;
+            font-size: 50%;
+
+        }
+        a{
+            color:rgba(244, 206, 118, 0.767);
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        .shell{
+            width: 90%;
+            height: 70%;
+            display: flex;
+        }
+        .box{
+            flex: 1;
+            overflow: hidden;
+            transition: .5s;
+            margin: 0 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+            border-radius: 20px;
+            border: 5px solid rgb(244, 206, 118);
+            background-color: rgb(244, 206, 118);
+        }
+        .box>img{
+            width: 150%;
+            height: 90%;
+            object-fit: cover;
+            transition: .5s;
+        }
+        .box>span{
+            font: 200 20px '优设标题黑';
+            text-align: center;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(167, 1, 0);
+        }
+        .box:hover{
+            flex-basis: 40%;
+        }
+        .box:hover>img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <p>weibo: <a href="https://weibo.com/u/7505404200" target="_blank">碗里唱风</a></p>
+    <div class="shell">
+        <div class="box">
+            <img src="./网页_MYPHOTOS_001/DSC_0620.JPG">
+            <span>Vill</span>
+        </div>
+        <div class="box">
+            <img src="./网页_MYPHOTOS_001/DSC_0740.JPG">
+            <span>balloon</span>
+        </div>
+        <div class="box">
+            <img src="./网页_MYPHOTOS_001/DSC_0693.JPG">
+            <span>follow</span>
+        </div>
+        <div class="box">
+            <img src="./网页_MYPHOTOS_001/DSC_0768.JPG">
+            <span>club</span>
+        </div>
+        <div class="box">
+            <img src="./网页_MYPHOTOS_001/DSC_0750.JPG">
+            <span>fair</span>
+        </div>
+    </div>
+</body>
+
+</html>
