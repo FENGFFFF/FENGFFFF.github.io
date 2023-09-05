@@ -455,32 +455,32 @@ h6 .small,
 
 h1,
 .h1 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h2,
 .h2 {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 h3,
 .h3 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 p {
@@ -3256,7 +3256,7 @@ body {
 body {
   padding-right: 0 !important;
   font-family: "PingHei","PingFang SC",Helvetica Neue,"Work Sans","Hiragino Sans GB","Microsoft YaHei",SimSun,sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.57143;
   color: #333333;
   background-color: #fff;
@@ -5657,7 +5657,7 @@ pre code {
 }
 
 .sidebar .slimContent {
-  padding: 20px;
+  padding: 10px;
 }
 
 .main {
@@ -5757,12 +5757,12 @@ body.no-sidebar .sidebar {
  */
 
 .profile-block {
-  padding: 20px 15px 10px 15px;
+  padding: 10px 15px 10px 15px;
 }
 
 #avatar {
-  width: 64px;
-  height: 64px;
+  width: 54px;
+  height: 54px;
   display: inline-block;
 }
 
@@ -5773,7 +5773,7 @@ body.no-sidebar .sidebar {
 }
 
 #name {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -7878,7 +7878,7 @@ body.okayNav-loaded {
   .header .navbar-header {
     float: none;
   }
-
+slimContent
   #avatar img {
     padding: 5px;
   }
