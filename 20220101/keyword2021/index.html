@@ -47,8 +47,6 @@
   
   
   
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
-  
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -299,6 +297,13 @@
 	</span>
 
 
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="/20220101/keyword2021/" class="leancloud_visitors"  data-flag-title="2021我的关键词">
+			<span class="leancloud-visitors-count">0</span>
+		</span>
+    </span>
+
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/20220101/keyword2021/#comments" class="article-comment-link">Comments</a></span>
         
 	
@@ -361,7 +366,7 @@
     
   <section id="comments">
   	
-           
+      <div id="vcomments"></div>
     
   </section>
 
@@ -464,24 +469,29 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
    
     
-  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
-  <script src="//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
   <script type="text/javascript">
-  var gitalk = new Gitalk({
-    clientID: 'a7b09d9ad2e3d9302ab4',
-    clientSecret: '6413064f5eed4118d560d4e2852716d0fe1cd5e2',
-    repo: 'FENGFFFF.github.io',
-    owner: 'FENGFFFF',
-    admin: ['FENGFFFF'],
-    id: md5(location.pathname),
-    distractionFreeMode: true,
-    language: 'zh-CN',
-    enableHotKey: 'true'
-  })
-  gitalk.render('comments')
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'LNkY9a9HLg481XjS9mazYNaO-MdYXbMMI',
+    appKey: '9V9lN1NgoZu6N4HQFeYRxc3d',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: true
+  });
   </script>
-      
+
+     
 
 
 
